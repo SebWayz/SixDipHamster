@@ -1,0 +1,86 @@
+.match-details{
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    font-size: 18px;
+    font-weight: 400;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.match-details img{
+    width: 90px;
+    max-width: 100%;
+}
+
+.match-details tbody{
+    display: table-row-group;
+    border-color: inherit;
+}
+
+.match-details tr{
+    display: table-row;
+}
+
+.match-details th{
+    background-color: hsla(0, 0%, 0%, 0.15);
+    display: table-cell;
+    text-align: center;
+}
+
+.match-details tr{
+    background-color: hsla(0, 0%, 0%, 0.4);
+    display: table-row;
+}
+
+.match-details td{
+    text-align: center;
+    display: table-cell;
+    height: 3em;
+}
+
+.match-team-1, .match-team-2, .match-team-winner{
+    display: inline-block;
+}
+
+.match-team-winner img{
+    width: 130px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.match-score{
+    margin: 0 1vw;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 1000px){
+    tr.qualifications{
+        display: none;
+    }
+
+    .match-details{
+        table-layout: fixed;
+        margin-bottom: 5rem;
+    }
+
+    .match-details th{
+        display: none;
+    }
+
+    .match-details td{
+        display: block;
+        text-align: left;
+    }
+
+    .match-details td:before{
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+    }
+
+    .match-details img{
+        width: 45px;
+    }
+}

@@ -1,0 +1,70 @@
+.achievements{
+    border: hsl(30, 70%, 60%) 2px solid;
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 400px;
+    box-shadow: 0 0 20px hsla(0, 0%, 0%, 0.15);
+}
+
+.achievements thead tr{
+    background-color: hsl(240, 7%, 51%);
+    text-align: center;
+}
+
+.achievements th, td{
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.achievements td > *{
+    vertical-align: middle;
+}
+
+.achievements tbody tr{
+    border-bottom: thin solid #dddddd;
+}
+
+.achievements tbody tr:nth-of-type(even) {
+    background-color: hsl(260, 18%, 10%);
+}
+
+.achievements tbody tr:last-of-type {
+    border-bottom: 2px solid hsl(30, 70%, 60%);
+}
+
+.achievements img{
+    height: 100px;
+    width: 100px;
+    max-height: 100%;
+    max-width: 100%;
+    padding-right: 10px;
+}
+
+@media only screen and (max-width: 1000px){
+    .achievements{
+        min-width: 200px;
+    }
+
+    .achievements th{
+        display: none;
+    }
+
+    .achievements tr{
+        margin-bottom: 40px;
+    }
+
+    .achievements td{
+        display: block;
+        text-align: left;
+    }
+
+    .achievements td:before{
+        float: left;
+        font-weight: bold;
+    }
+
+    .achievements img{
+        height: 40px;
+        width: 40px;
+    }
+}
