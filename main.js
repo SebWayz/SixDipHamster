@@ -34,10 +34,12 @@ $('#invitational').click(function () {
     //if there isn't txt -> fade it in
     if ( $('#eventDesc').css("display", "none") ) {
         $('#eventDesc').load("ChuTv_invitational_desc.html").fadeIn('slow', function () {
+            console.log('ChuTv_invitational_desc.html loaded in the div.');
             scrollIndicator();
         });
     //else if there is some txt -> hide it then fade in the new content
     } else if ($('#eventDesc').css("display", "block")) {
+        console.log('ChuTv_invitational_desc.html loaded in the div.');
         $('#eventDesc').hide().load("ChuTv_invitational_desc.html").fadeIn('slow');
     }
 });
@@ -52,10 +54,12 @@ $('#brutal').click(function () {
     if ( $('#eventDesc').css("display", "none") ) {
         $('#eventDesc').load("BG_2v2_desc.html").fadeIn('slow', function () {
             scrollIndicator();
+            console.log('BG_2v2_desc.html loaded in the div.');
         });
     //else if there is some txt -> hide it then fade in the new content
     } else if ($('#eventDesc').css("display", "block")) {
         $('#eventDesc').hide().load("BG_2v2_desc.html").fadeIn('slow');
+        console.log('BG_2v2_desc.html loaded in the div.');
     }
 });
 
