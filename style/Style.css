@@ -15,7 +15,7 @@ main > h1{
 	height: 30px;
 	border: var(--pied-couleur) 12px solid;
 	border-radius: 50%;
-	margin:0 auto;
+	margin: 0 auto;
 	position:relative;
 	-webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -34,13 +34,13 @@ main > h1{
 }
 
 .footer {
-	bottom:0;
-	left:0;
-	position:fixed;
-    width: 100%;
-    height: 2em;
-    overflow:hidden;
-    margin:0 auto;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+  width: 100%;
+  height: 1.2em; /* Change footer's position */
+  overflow: hidden;
+  margin: 0 auto;
 	-webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -78,9 +78,9 @@ main > h1{
 }
 
 .footer_center{
-	width:500px;
-	float:left;
-  text-align:center;
+	width: 500px;
+	float: left;
+  text-align: center;
 }
 
 .footer h2{
@@ -139,6 +139,7 @@ main > h1{
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-bottom: 7rem;
 }
 
 .dl-btn{
@@ -161,6 +162,11 @@ main > h1{
 }
 
 @media only screen and (max-width: 600px){
+  #yt-trailer{
+    width: 100%;
+    height: 250px;
+  }
+
   .achievements{
     min-width: 10px;
   }
@@ -175,7 +181,7 @@ main > h1{
   }
 
   .fa {
-    padding: 20px;
+    padding: 10px; /* Change socials size */
     font-size: 30px;
     width: 30px;
     border: 2px solid;
@@ -190,7 +196,7 @@ main > h1{
 
   .footer h2{
     font-size: 25px;
-    margin-top: 60px;
+    margin-top: 50px;
     margin-left: 40px;
   }
 

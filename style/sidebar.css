@@ -27,6 +27,7 @@ main{
   position: fixed;
   background-color: var(--bg-primary);
   transition: width 600ms ease;
+  z-index: 1; /* Fix to make the navbar always go over the content */
 }
 
 .navbar-nav{
@@ -132,9 +133,13 @@ body::-webkit-scrollbar-thumb{
 }
 
 .youtube-video{
-display: flex;
-justify-content: center;
-align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-mobile{
+  display: none;
 }
 
 /* Large screens */
@@ -184,5 +189,16 @@ align-items: center;
 
   main {
     margin: 0;
+  }
+
+  .logo-mobile{
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    position: fixed;
+    border: hsl(30, 70%, 60%) 1.75px solid;
+    border-radius: 50%;
+    margin: 5px 0 0 5px;
+    z-index: 999;
   }
 }

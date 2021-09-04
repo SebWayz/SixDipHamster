@@ -7,7 +7,7 @@
 }
 
 .achievements thead tr{
-    background-color: hsl(240, 7%, 51%);
+    background-color: hsl(260, 18%, 10%);
     text-align: center;
 }
 
@@ -40,6 +40,38 @@
     padding-right: 10px;
 }
 
+@keyframes scroll-indicator {
+    0% {
+        -webkit-transform: translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translate(0, 20px);
+        opacity: 0;
+    }
+}
+
+#scroll {
+    width: 5rem;
+    height: 5rem;
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding: 0 5px 1.25rem 0;
+    z-index: 1;
+}
+
+#scroll svg{
+    width: 100%;
+    height: 100%;
+    fill:hsl(30, 70%, 60%);
+    animation: scroll-indicator 1.5s 3 forwards; /* "forwards" makes it go back to display:none at the end */
+}
+
 @media only screen and (max-width: 1000px){
     .achievements{
         min-width: 200px;
@@ -66,5 +98,16 @@
     .achievements img{
         height: 40px;
         width: 40px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #scroll{
+        width: 4rem;
+        height: 4rem;
+        right: 0;
+        bottom: 0;
+        padding: 0 5px 6rem 0;
+        z-index: 1;
     }
 }
