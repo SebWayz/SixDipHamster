@@ -34,13 +34,13 @@ $('#invitational').click(function () {
     //if there isn't txt -> fade it in
     if ( $('#eventDesc').css("display", "none") ) {
         $('#eventDesc').load("ChuTv_invitational_desc.html").fadeIn('slow', function () {
-            console.log('ChuTv_invitational_desc.html loaded in the div.');
             scrollIndicator();
+            console.log('ChuTv_invitational_desc.html loaded in the div.');
         });
     //else if there is some txt -> hide it then fade in the new content
     } else if ($('#eventDesc').css("display", "block")) {
-        console.log('ChuTv_invitational_desc.html loaded in the div.');
         $('#eventDesc').hide().load("ChuTv_invitational_desc.html").fadeIn('slow');
+        console.log('ChuTv_invitational_desc.html loaded in the div.');
     }
 });
 
