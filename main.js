@@ -1,5 +1,5 @@
 // Loads side navbar & footer on the page to create a template
-$(function(){
+$(document).ready(function(){
     $("#navbar").load("navbar.html");
     $("#footer").load("footer.html");
 });
