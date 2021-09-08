@@ -25,7 +25,7 @@ function scrollIndicator(){
 }
 
 
-$('#invitational').click(function () {
+$('#brutal').click(function () {
     console.log('In function (invitational)');
 
     console.log('eventDesc visibility : ' + $('#eventDesc').is(':visible'));
@@ -44,7 +44,7 @@ $('#invitational').click(function () {
     }
 });
 
-$('#brutal').click(function () {
+$('#invitational').click(function () {
     console.log('In function (BG 2v2)');
 
     console.log('eventDesc visibility : ' + $('#eventDesc').is(':visible'));
