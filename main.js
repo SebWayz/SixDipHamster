@@ -14,7 +14,7 @@ function isInViewport(element) {
     );
 }
 
-//Shows a scroll indicator (screen bottom right) when the button is clicked
+//Shows a scroll indicator (bottom right) when the button is clicked
 function scrollIndicator(){
     if( $('#eventDesc').is(":visible") ){
         $('#scroll').css("display", "block");
